@@ -11,14 +11,14 @@ String getWeather(String miasto) - zwraca informację o pogodzie w podanym mieś
 Double getRateFor(String kod_waluty) - zwraca kurs waluty danego kraju wobec waluty podanej jako argument,
 Double getNBPRate() - zwraca kurs złotego wobec waluty danego kraju
 Następujące przykładowa klasa  pokazuje możliwe użycie tych metod:
-            
-  public class Main {
-    public static void main(String[] args) {
-      Service s = new Service("Poland");
-      String weatherJson = s.getWeather("Warsaw");
-      Double rate1 = s.getRateFor("USD");
-      Double rate2 = s.getNBPRate();
-      // ...
-      // część uruchamiająca GUI
-    }
-  }
+    
+            public class Main {
+                        public static void main(String[] args) {
+                                    Service s = new Service("Poland");
+                                    String weatherJson = s.getWeather("Warsaw");
+                                    Double rate1 = s.getRateFor("USD");
+                                    Double rate2 = s.getNBPRate();
+                                    // ...
+                                    // część uruchamiająca GUI
+                        }
+            }
